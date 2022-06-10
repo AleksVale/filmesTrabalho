@@ -59,7 +59,7 @@ function mostraFilmesDestaque() {
     let texto = ''
     for (let i = 4; i < 8; i++) {
       texto += `
-      <div class="col-12 col-sm-12 col-md-6 col-lg-3 cards2">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-3 cards2 pb-4">
           <div class="card ">
             <img onclick="clicouBotao(this.id)" id="${dados.results[i].id}"src="https://image.tmdb.org/t/p/original/${dados.results[i].poster_path}" class="card-img-top" alt="...">
           </div>
