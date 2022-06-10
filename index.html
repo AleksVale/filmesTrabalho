@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The movies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b139898041.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="d-flex p-2 flex-row justify-content-between align-items-center header">
+        <div class="p-2">
+          <img src="img/logo.png" alt="LOGO" class="logo" />
+        </div>
+        <div class=" p-2 menuRight">
+          <nav class="navbar navbar-expand-lg navbar-light menu">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+              
+                  <li class="nav-item">
+                    <a class="nav-link borderRight" href="#lanca">Lançamentos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link borderRight" href="#destaque">em destaque</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link borderRight" href="#avaliacao">avaliações</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link borderRight" href="#entrevista">entrevistas & making off</a>
+                  </li>
+                  <li class="nav-item pr-4">
+                    <a class="nav-link " href="#novidades">novidades</a>
+                  </li>
+                </ul>
+                <form class="d-flex ">
+                  <input class="buttonSearch form-control me-2 searchBox" id="searchInput" type="search" placeholder="Pesquise por filmes ou séries" aria-label="Search">
+                  <a href="#"><button class="btn btn-outline-dark" id="btnSearch" type="button"><i class="fa-solid fa-magnifying-glass"></i></button></a>
+                </form>
+              </div>
+          </nav>
+        </div>
+      
+    </header>
+    <main >
+      <section class="container-fluid bg-1">
+      <div class="row">
+        <h1 class="col-12 title">Lançamentos</h1>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div class="carousel-inner " id="divCarousel">
+                <div class="carousel-item active" >
+                  <div class="row">
+                  <img class="col-6 imgCarousel" src="img/lanca/lanca1.jpg" class="d-block w-100" alt="...">
+                  <div class="col-6 textDescription">
+                    <h2>Nome filme</h2>
+                    <p>Resumo</p>
+                    <p><span><i class="fa-solid fa-star"></i> 7.8</span> Lançamento: ></p>
+                    <p class="idLanca">id</p>
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                  <img class="col-6 imgCarousel" src="img/lanca/lanca1.jpg" class="d-block w-100" alt="...">
+                  <div class="col-6 textDescription">
+                    <h2>Nome filme</h2>
+                    <p>Resumo</p>
+                    <p><span><i class="fa-solid fa-star"></i> 7.8</span> Lançamento: ></p>
+                    <p class="idLanca">id</p>
+                  </div>
+                </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                  <img class="col-6 imgCarousel" src="img/lanca/lanca1.jpg" class="d-block w-100" alt="...">
+                  <div class="col-6 textDescription">
+                    <h2>Nome filme</h2>
+                    <p>Resumo</p>
+                    <p><span><i class="fa-solid fa-star"></i> 7.8</span> Lançamento: ></p>
+                    <p class="idLanca">id</p>
+                  </div>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container bg-2">
+      <div class="row">
+        <h1 class="col-6 destaque" id="destaque"e>Em destaque</h1>
+        <div class="col-6">
+          <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+              Categoria: TODOS
+            </a>
+          
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Aventura</a></li>
+              <li><a class="dropdown-item" href="#">Romance</a></li>
+              <li><a class="dropdown-item" href="#">Comédia</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3" id="cards1">
+          <div class="card" >
+            <img onclick="clicouBotao(this.id)"id="card1" src="img/regresso.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img onclick="clicouBotao(this.id)" id="card2"src="img/spider.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">  
+          <div class="card">
+            <img onclick="clicouBotao(this.id)" id="card3" src="img/alerta.jpg" class="card-img-top" alt="...">
+          </div>
+        </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+          <div class="card">
+            <img onclick="clicouBotao(this.id)" id="card4"src="img/transformers.jpg" class="card-img-top" alt="...">
+          </div>
+          </div>
+          <div class="row" id="moreCards">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
+            <div class="card moreCards">
+              <img onclick="clicouBotao(this.id)" id="card4"src="" class="card-img-top" alt="">
+            </div>
+            </div>
+          </div>
+      </div>
+      <div class="row btnRow">
+        <button id="btnMoreMovies" type="button" class="btn btn-secondary btn-sm col-12 btnLoadMoreCards"><i class="fa-solid fa-plus"></i> Carregar mais filmes</button>
+      </div>
+      <div class="row">
+        <h1 class="col-12 avaliacoes" id="avaliacao">Filmes melhores avaliados</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-12" id="divRated">
+          <div class="row">
+            <div class="col-lg-12">
+              <img src="img/profiles/profile1.jpg" class= "posterTopRated" alt="poster">
+            </div>
+            <div class="avaliation col-lg-12">
+              <h4 class="name"> Fernanda Montenegro</h4>
+              <p class="textAvaliation"> <strong>Avaliação: </strong>Para melhor ou pior (principalmente melhor), The Batman é quando ele é detetive primeiro, super-herói depois. Um noir sombrio e emocionante, mas também com um vislumbre de esperança emocionante. Não dói muito se estamos tendo um novo filme do Batman, especialmente se ele seguiu uma rota fascinante como essa. Pattinson e Kravitz foram explosivos juntos.</p>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <strong class="data">09/12/2021</strong>
+              </p>
+            </div>
+            </div>
+          </div>
+      </div>
+      <div class="row btnRow">
+        <button type="button" class="btn btn-secondary btn-sm col-12 btnLoadMoreAvaliation" id="loadMoreRated"><i class="fa-solid fa-plus"></i> Carregar mais filmes</button>
+      </div>
+    </section>
+    <section class="container bg-1">
+      <div class="row">
+        <h1 class="col-12 titleEntrevista" id="entrevista">Entrevistas & Making off</h1>
+      </div>
+      <div class="row" >
+        <article class="col-lg-4">
+          
+            <iframe  class="video1"src="https://www.youtube.com/embed/TcRgCIwzEgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+          <div class="movieName">
+            <p><strong>Filme:</strong> Doutor Estranho no Multiverso da Loucura</p>
+          </div>
+          <div class="movieInfos">
+            <strong>Diretor:</strong><span class="spacing">Sam Raimi</span>
+            <p><strong>Roteirista:</strong><span class="spacing">Stan lee</span> <strong class="spacing">Estreia:</strong><span class="spacing">2022</span></p>
+          </div>
+        </article>
+        </article>
+        <article class="col-lg-4">
+            <iframe  class="video1"src="https://www.youtube.com/embed/0HEvyxNJRks" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="movieName">
+            <p><strong>Filme:</strong> Aquaman</p>
+          </div>
+          <div class="movieInfos">
+            <strong>Diretor:</strong><span class="spacing">James Wan</span>
+            <p><strong>Roteirista:</strong><span class="spacing"> Geoff Johns</span> <strong class="spacing">Estreia:</strong><span class="spacing">2018</span></p>
+          </div>
+        </article>
+        </article>
+        <article class="col-lg-4">
+            <iframe class="video1" src="https://www.youtube.com/embed/Tu-uEb9tJvg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="movieName">
+            <p><strong>Filme:</strong> Parasite</p>
+          </div>
+          <div class="movieInfos">
+            <p><strong>Diretor:</strong><span class="spacing">
+              Bong Joon Ho</span></p>
+            <p><strong>Roteirista:</strong><span class="spacing">
+              Bong Joon Ho</span> <strong class="spacing">Estreia:</strong><span class="spacing">2019</span></p>
+          </div>
+        </article>
+      </div>
+      
+    </section>
+    <section class="container bg-2">
+      
+      <div class="row">
+        <article class="col-lg-7">
+          <h1 class="novidades" id="novidades">Séries populares</h1>
+          <div id="divNews">
+          <div class="row news">
+           <div class="col-lg-4">
+             <img src="img/noticias/noticia2.webp" class="fotoNoticia" alt="">
+           </div>
+           <div class="col-lg-8">
+            <div class="newsText">
+              <h5 class="newsTitle">Vencedor do oscar</h5>
+              <p>O Oscar 2022 consagrou No Ritmo do Coração (CODA), como seu grande vencedor. A Academia de Artes e Ciências Cinematográficas de Hollywood deu ao longa de Sian Heder o prêmio de Melhor Filme, bem como os de Roteiro Adaptado e de Melhor Ator Coadjuvante, para Troy Kotsur -- que se tornou o primeiro homem surdo a vencer um Oscar em uma categoria de atuação.  </p>
+              <p class="separacao"><span class="tags">Oscar</span>
+                <span class="tags">Ganhador</span>
+                <span class="tags">2022</span></p>
+            </div>
+           </div>
+          </div>
+          </div>
+          
+        </article>
+        <article class="col-lg-4"> 
+          <h1 class="sobre">Sobre</h1>
+          <p class="textSobre">Esse site é um site desenvolvido para facilitar a pesquisa sobre filmes e séries, com a utilização da API do THE MOVIE DB e também atualizar as pessoas de novidades do mundo cinematográfico, agilizando a atualização de notícias, também disponibilizando making offs e entrevistas dos mais badalados filmes da atualidade, sendo assim trazendo tanto informações novas quanto entretenimento de qualidade para todos os usuários do site.</p>
+          <h1 class="editorial">Editorial</h1>
+          <div class="diretores">
+            <p><i class="fa-regular fa-user"></i> <strong class="spacing"> Redação:</strong> Aleksander Ribeiro </p>
+            <p><i class="fa-regular fa-user"></i> <strong class="spacing">Pesquisa:</strong> Aleksander Ribeiro </p>
+            <p><i class="fa-regular fa-user"></i> <strong class="spacing"> Gerente geral:</strong> Aleksander Ribeiro </p>
+          </div>
+          <div class="redes">
+            <h3>Redes Sociais</h3>
+            <a href=""><i class="fa-brands fa-facebook-square  spacing"></i></a>
+            <a href="https://twitter.com/deusomenaleks"><i class="fa-brands fa-twitter-square  spacing"></i></a>
+            <a href="https://www.instagram.com/aleks_fps/"><i class="fa-brands fa-instagram-square  spacing"></i></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    
+    </main>
+    <footer class="container-fluid bg-1">
+      <div class="row">
+      <p class="col-11 Copyright">Copyright 2022-Disciplina Disciplina de Desenvolvimento de Interfaces Web- <strong>ICEI PUC MINAS</strong></p>
+      <img class="logoBottom col-1" src="img/logo.png" alt="">
+      </div>
+    </footer>
+    <script type="text/javascript" src="filmes.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

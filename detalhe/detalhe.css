@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+body {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+}
+.borderBottom {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #1bf05b;
+}
+.logo {
+  max-width: 500px;
+}
+.divImg {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.imgMovie {
+  max-width: 100%;
+}
+.movieTitle {
+  text-align: center;
+  font-size: 3rem;
+}
+.movieSinopse {
+  font-size: 1.5rem;
+}
+.genre {
+  text-align: center;
+}
+.genero {
+  padding: 5px 10px;
+  background-color: rgb(49, 161, 139);
+  border: 0px solid yellow;
+  border-radius: 50px;
+}
+.lancamento {
+  justify-content: space-around;
+  color: #371071;
+}
+.star {
+  font-size: 3rem;
+  text-align: center;
+}
+.empresas {
+  text-align: center;
+}
+.empresas1 {
+  font-weight: bold;
+}
+.cards {
+  max-width: 100%;
+}
+.knowMore {
+  padding: 10px 0px;
+  justify-content: space-between;
+}
+.bg2 {
+  background: black;
+  color: white;
+  text-align: center;
+}
