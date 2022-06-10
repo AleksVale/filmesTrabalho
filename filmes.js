@@ -122,7 +122,7 @@ function seriesManda() {
                 <span class="tags"> <i class="fa-solid fa-star"></i>${series.vote_average}</span>
                 </p>
                 <p class="btnSeries">
-                <a  href="https://www.themoviedb.org/tv/${series.id}"><button type="button" class="btn btn-lg btn-outline-dark ">Saiba mais</button></p></a></p>
+                <a  href="https://www.themoviedb.org/tv/${series.id}"><button type="button" class="btn btn-lg btn-outline-info ">Saiba mais</button></p></a></p>
             </div>
            </div>
           </div>
@@ -155,8 +155,8 @@ function mostraFilmesUpcoming() {
       `
     <div class="carousel-item">
     <div class="row">
-    <img class="col-6 imgCarousel" src="https://image.tmdb.org/t/p/original/${upcoming.backdrop_path}" class="d-block w-100" alt="...">
-    <div class="col-6 textDescription">
+    <img class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${upcoming.backdrop_path}" class="d-block w-100" alt="...">
+    <div class="col-lg-6 col-md-6 col-sm-12 textDescription">
       <h2 class="nameMovie">${upcoming.title}</h2>
       <p class="sinopse"><strong>Sinopse: </strong> ${upcoming.overview}</p>
       <p class="last"><span class="lancamento"><i class="fa-solid fa-star"></i> ${upcoming.vote_average}</span > Lançamento: ${upcoming.release_date}</p>
