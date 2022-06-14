@@ -18,6 +18,7 @@ body {
   width: 100%;
   max-width: 200px;
 }
+
 .searchBox {
   width: 350px;
 }
@@ -196,5 +197,25 @@ body {
   }
   .redes {
     text-align: center;
+  }
+  .searchBox {
+    max-width: 100px;
+  }
+  .borderRight {
+    border-right: 0px solid #fff;
+  }
+}
+.telaCarrega {
+  animation: isRotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e5e5;
+  border-top-color: #1bb21b;
+  border-radius: 50%;
+  margin: 300px auto;
+}
+@keyframes isRotating {
+  to {
+    transform: rotate(1turn);
   }
 }

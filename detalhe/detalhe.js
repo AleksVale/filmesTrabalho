@@ -5,12 +5,13 @@ mostraFilmeClicado()
 mostraRecomendacoes()
 function mostraFilmeClicado() {
   let divMain = document.getElementById('divMain')
+  let filmeClicado = JSON.parse(this.responseText)
   let texto = ''
   let tamanhoGenero
   let textoGenero = ''
   let tamanhoEmpresa
   let textoEmpresa = ''
-  let filmeClicado = JSON.parse(this.responseText)
+
   tamanhoGenero = filmeClicado.genres
   tamanhoGenero = tamanhoGenero.length
   tamanhoEmpresa = filmeClicado.production_companies.length
@@ -59,8 +60,16 @@ function mostraRecomendacoes() {
   let divSimilar = document.getElementById('divSimilar')
   let similares = JSON.parse(this.responseText)
   let texto = ''
-  for (let i = 0; i < 9; i++) {
-    texto += `
+  console.log(similares)
+  if (similares.total_results == 0) {
+    texto = `
+    <div class="col ">
+      <h2 class="text-center p-5"> Nenhum filme similar encontrado </h2>
+    </div>
+    `
+  } else {
+    for (let i = 0; i < 9; i++) {
+      texto += `
     <div class="col-lg-4 col-md-6 col-sm-12">
     <img
       class="cards"
@@ -69,13 +78,14 @@ function mostraRecomendacoes() {
     />
     <div class="knowMore d-flex">
     <span><i class="fa-solid fa-star"> ${similares.results[i].vote_average}</i></span>
-      <a href="https://www.themoviedb.org/movie/${similares.results[i].id}">
+      <a target="_blank" href="https://www.themoviedb.org/movie/${similares.results[i].id}">
         <button type="button" class="btn btn-info">Saiba mais</button></a
       >
       
     </div>
   </div>
     `
+    }
   }
   divSimilar.innerHTML = texto
 }
