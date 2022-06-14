@@ -2,18 +2,7 @@
 body {
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.15) 0%,
-      rgba(0, 0, 0, 0.15) 100%
-    ),
-    radial-gradient(
-        at top center,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(0, 0, 0, 0.4) 120%
-      )
-      #989898;
-  background-blend-mode: multiply, multiply;
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
 }
 .borderBottom {
   padding-bottom: 20px;
@@ -21,6 +10,7 @@ body {
 }
 .logo {
   max-width: 500px;
+  width: 100%;
 }
 .divImg {
   text-align: center;
@@ -70,4 +60,29 @@ body {
   background: black;
   color: white;
   text-align: center;
+}
+
+.telaCarrega {
+  animation: isRotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e5e5;
+  border-top-color: #1bb21b;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+.telaCarrega2 {
+  animation: isRotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e5e5;
+  border-top-color: #1870da;
+  border-radius: 50%;
+  margin: 40px auto;
+}
+
+@keyframes isRotating {
+  to {
+    transform: rotate(1turn);
+  }
 }

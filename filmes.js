@@ -122,7 +122,7 @@ function seriesManda() {
                 <span class="tags"> <i class="fa-solid fa-star"></i>${series.vote_average}</span>
                 </p>
                 <p class="btnSeries">
-                <a  href="https://www.themoviedb.org/tv/${series.id}"><button type="button" class="btn btn-lg btn-outline-info ">Saiba mais</button></p></a></p>
+                <a target="_blank" href="https://www.themoviedb.org/tv/${series.id}"><button type="button" class="btn btn-lg btn-outline-info ">Saiba mais</button></p></a></p>
             </div>
            </div>
           </div>

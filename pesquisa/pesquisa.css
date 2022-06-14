@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-image: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%);
+}
 .searchName {
   text-align: center;
   padding: 40px;
@@ -18,4 +21,18 @@
 }
 .imagem {
   max-width: 300px;
+}
+.telaCarrega {
+  animation: isRotating 1s infinite;
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e5e5;
+  border-top-color: #1bb21b;
+  border-radius: 50%;
+  margin: 20px auto;
+}
+@keyframes isRotating {
+  to {
+    transform: rotate(1turn);
+  }
 }
