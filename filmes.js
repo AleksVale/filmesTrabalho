@@ -136,7 +136,7 @@ function mostraFilmesUpcoming() {
   let divCarousel = document.getElementById('divCarousel')
   let texto = `<div class="carousel-item active" >
   <div class="row">
-  <img class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${firstDiv.backdrop_path}" class="d-block w-100" alt="...">
+  <img onclick="alert('Nesse setor do site, utilize o botão de saiba mais') "class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${firstDiv.backdrop_path}">
   <div class="col-lg-6 col-md-6 col-sm-12 textDescription">
     <h2 class="nameMovie">${firstDiv.title}</h2>
     <p class="sinopse"><strong>Sinopse:</strong> ${firstDiv.overview}</p>
@@ -159,7 +159,7 @@ function mostraFilmesUpcoming() {
       `
     <div class="carousel-item">
     <div class="row">
-    <img class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${backdrop}" class="d-block w-100" alt="...">
+    <img onclick="alert('Nesse setor do site, utilize o botão de saiba mais')"class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${backdrop}" alt="...">
     <div class="col-lg-6 col-md-6 col-sm-12 textDescription">
       <h2 class="nameMovie">${upcoming.title}</h2>
       <p class="sinopse"><strong>Sinopse: </strong> ${upcoming.overview}</p>
