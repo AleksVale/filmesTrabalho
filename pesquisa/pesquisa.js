@@ -24,7 +24,7 @@ function mostraFilmes() {
   let texto = ''
 
   let dados = JSON.parse(this.responseText)
-  if (dados.total_results == 0) {
+  if (dados.total_results == 0 || dados == null || dados == undefined) {
     texto += `
     <div class="col">
       <h1 class="text-center">Nada encontrado :(</h1>

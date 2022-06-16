@@ -22,9 +22,9 @@ function mostraFilmesDestaque() {
   let card3 = document.getElementById('card3')
   let card4 = document.getElementById('card4')
 
-  let dados = JSON.parse(this.responseText)
+  let dadosDestaque = JSON.parse(this.responseText)
   for (let i = 0; i < 4; i++) {
-    let destaques = dados.results[i]
+    let destaques = dadosDestaque.results[i]
     if (i == 0) {
       card1.setAttribute(
         'src',
@@ -61,7 +61,7 @@ function mostraFilmesDestaque() {
       texto += `
       <div class="col-12 col-sm-12 col-md-6 col-lg-3 cards2 pb-4">
           <div class="card ">
-            <img onclick="clicouBotao(this.id)" id="${dados.results[i].id}"src="https://image.tmdb.org/t/p/original/${dados.results[i].poster_path}" class="card-img-top" alt="...">
+            <img onclick="clicouBotao(this.id)" id="${dadosDestaque.results[i].id}"src="https://image.tmdb.org/t/p/original/${dadosDestaque.results[i].poster_path}" class="card-img-top" alt="...">
           </div>
           </div>
       `
@@ -149,13 +149,17 @@ function mostraFilmesUpcoming() {
 </div>`
   for (let i = 1; i < 5; i++) {
     let upcoming = filmesComing.results[i]
+    let backdrop = upcoming.backdrop_path
+    if (backdrop == null || backdrop == undefined) {
+      backdrop = upcoming.poster_path
+    }
 
     texto =
       texto +
       `
     <div class="carousel-item">
     <div class="row">
-    <img class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${upcoming.backdrop_path}" class="d-block w-100" alt="...">
+    <img class="col-lg-6 col-md-6 col-sm-12 imgCarousel" src="https://image.tmdb.org/t/p/original/${backdrop}" class="d-block w-100" alt="...">
     <div class="col-lg-6 col-md-6 col-sm-12 textDescription">
       <h2 class="nameMovie">${upcoming.title}</h2>
       <p class="sinopse"><strong>Sinopse: </strong> ${upcoming.overview}</p>
@@ -333,7 +337,3 @@ function clicouBotao(clickedId) {
   localStorage.setItem('idFilme', idFilme)
   window.location.href = 'detalhe/detalhe.html'
 }
-
-//botoes saiba mais
-
-//tratar cliques nos botões
