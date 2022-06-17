@@ -7,6 +7,9 @@
 body {
   overflow-x: hidden;
 }
+.backgroundCinza {
+  width: 100%;
+}
 .header {
   background-color: rgba(48, 50, 47, 0.35);
   padding-bottom: 20px;
@@ -71,7 +74,7 @@ body {
   display: none;
 }
 .bg-2 {
-  background-color: rgba(48, 50, 47, 0.35);
+  background-color: #6b666b;
 }
 .destaque {
   padding: 20px 20px 20px 10px;
