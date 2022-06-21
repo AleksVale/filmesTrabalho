@@ -41,10 +41,10 @@ function mostraFilmes() {
       texto += `
     
     <div class="row" id="infoMovie">
-    <div class="col-4">
+    <div class="col-lg-4 col-md-6 col-sm-12">
       <img class="image" src="https://image.tmdb.org/t/p/original/${filme.poster_path}" alt="" />
     </div>
-    <div class="col-8">
+    <div class="col-lg-8 col-md-6 col-sm-12">
       <p class="textMovie"><strong>Nome: </strong> ${filme.original_title}</p>
       <p class="textMovie"><strong>Resumo: </strong>${filme.overview}</p>
       <p class="textMovie"><strong>Lançamento: </strong>${filme.release_date}</p>
